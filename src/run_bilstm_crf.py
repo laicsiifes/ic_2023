@@ -158,8 +158,7 @@ if __name__ == '__main__':
     print(f'\nTags: {tag_dictionary.idx2item}')
 
     bert_embedding = TransformerWordEmbeddings(model=embedding_model_path, layers='-1', subtoken_pooling='first',
-                                               fine_tune=False, use_context=True, allow_long_sentences=True,
-                                               model_max_length=512)
+                                               fine_tune=False, use_context=True, allow_long_sentences=True)
 
     tagger = SequenceTagger(hidden_size=256, embeddings=bert_embedding, tag_dictionary=tag_dictionary,
                             tag_type=tag_type, use_crf=is_use_crf)
