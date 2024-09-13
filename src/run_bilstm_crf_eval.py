@@ -6,11 +6,11 @@ from src.bert_utils import dump_report
 
 if __name__ == '__main__':
 
-    # corpus_name = 'harem_selective'
+    corpus_name = 'harem_selective'
     # corpus_name = 'harem_total'
     # corpus_name = 'le_ner'
     # corpus_name = 'editais'
-    corpus_name = 'c_corpus'
+    # corpus_name = 'c_corpus'
     # corpus_name = 'pl_corpus'
     # corpus_name = 'bete'
 
